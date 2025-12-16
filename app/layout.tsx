@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "Tra cứu thuật ngữ, bệnh viện và quy trình bồi thường nhanh chóng.",
     url: "https://baohiem.soft.io.vn",
-    siteName: "InsurTech Portal",
+    siteName: "Cổng Thông Tin Bảo Hiểm Trực Tuyến",
     images: [
       {
         url: "/1200x630.jpg",
