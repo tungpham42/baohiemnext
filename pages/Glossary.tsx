@@ -154,6 +154,9 @@ const Glossary: React.FC = () => {
                 description="Không tìm thấy dữ liệu phù hợp"
               />
             ),
+            triggerAsc: "Sắp xếp từ A đến Z",
+            triggerDesc: "Sắp xếp từ Z đến A",
+            cancelSort: "Hủy sắp xếp",
           }}
           pagination={{
             current: currentPage,
