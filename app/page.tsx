@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: "Cổng Thông Tin Bảo Hiểm Trực Tuyến",
     images: [
       {
-        url: "/1200x630.jpg",
+        url: "https://baohiem.soft.io.vn/1200x630.jpg",
         width: 1200,
         height: 630,
       },
