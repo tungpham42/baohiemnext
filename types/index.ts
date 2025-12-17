@@ -34,4 +34,5 @@ export interface InsuranceCompany {
   phone: string;
   website: string;
   logo?: string; // (Optional) Link logo
+  workingHours: string;
 }

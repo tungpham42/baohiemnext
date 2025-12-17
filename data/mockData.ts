@@ -6350,14 +6350,18 @@ export const hospitalsData: Hospital[] = [
 // ==========================================
 // 4. DATA CÔNG TY BẢO HIỂM (COMPANIES) - 60 items
 // ==========================================
+// ==========================================
+// 4. DATA CÔNG TY BẢO HIỂM (COMPANIES) - UPDATED WORKING HOURS
+// ==========================================
 export const companiesData: InsuranceCompany[] = [
-  // --- NHÂN THỌ (LIFE) - 18 công ty ---
+  // --- NHÂN THỌ (LIFE) ---
   {
     id: "l_bv",
     name: "Tổng Công ty Bảo Việt Nhân thọ (Bao Viet Life)",
     type: "Life",
     phone: "1900 558899",
     website: "https://baovietnhantho.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_manu",
@@ -6365,6 +6369,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1900 1776",
     website: "https://www.manulife.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "l_pru",
@@ -6372,6 +6377,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1800 1247",
     website: "https://www.prudential.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_aia",
@@ -6379,6 +6385,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "028 3812 2777",
     website: "https://www.aia.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:30",
   },
   {
     id: "l_dai",
@@ -6386,6 +6393,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "028 3810 0888",
     website: "https://www.dai-ichi-life.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_chubb",
@@ -6393,6 +6401,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "028 3827 8123",
     website: "https://www.chubb.com/vn-vn/",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "l_gen",
@@ -6400,6 +6409,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1900 969675",
     website: "https://generali-life.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_han",
@@ -6407,6 +6417,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1900 5555 22",
     website: "https://www.hanwhalife.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_mb",
@@ -6414,6 +6425,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "024 2229 8888",
     website: "https://www.mbageas.life",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_fwd",
@@ -6421,6 +6433,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1800 969690",
     website: "https://www.fwd.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_sun",
@@ -6428,6 +6441,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1800 1786",
     website: "https://www.sunlife.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_cathay",
@@ -6435,6 +6449,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "028 6255 6393",
     website: "https://www.cathaylife.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "l_map",
@@ -6442,6 +6457,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "024 3936 6666",
     website: "https://www.map-life.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "l_fubon",
@@ -6449,6 +6465,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "028 3933 5566",
     website: "https://www.fubonlife.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "l_bidv",
@@ -6456,6 +6473,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "024 6282 0808",
     website: "https://www.bidvmetlife.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "l_phuhung",
@@ -6463,6 +6481,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "028 5413 5999",
     website: "https://www.phuhunglife.com",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "l_mvi",
@@ -6470,6 +6489,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1900 633 369",
     website: "https://www.mvilife.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "l_shinhan",
@@ -6477,15 +6497,17 @@ export const companiesData: InsuranceCompany[] = [
     type: "Life",
     phone: "1900 272727",
     website: "https://shinhanlifevn.com.vn",
+    workingHours: "Hotline 24/7",
   },
 
-  // --- PHI NHÂN THỌ (NON-LIFE) - 35 công ty ---
+  // --- PHI NHÂN THỌ (NON-LIFE) ---
   {
     id: "nl_bv",
     name: "Bảo hiểm Bảo Việt (Bao Viet Insurance)",
     type: "Non-Life",
     phone: "1900 558899",
     website: "https://baovietonline.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_pvi",
@@ -6493,6 +6515,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 545458",
     website: "https://www.pvi.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_pti",
@@ -6500,6 +6523,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 545475",
     website: "https://www.pti.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_mic",
@@ -6507,6 +6531,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 558891",
     website: "https://www.mic.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_bmi",
@@ -6514,6 +6539,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1800 588812",
     website: "https://www.baominh.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_pjico",
@@ -6521,6 +6547,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 545455",
     website: "https://www.pjico.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_bic",
@@ -6528,6 +6555,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 9456",
     website: "https://www.bic.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_vbi",
@@ -6535,6 +6563,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 1566",
     website: "https://vbi.vietinbank.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_lib",
@@ -6542,6 +6571,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1800 599998",
     website: "https://www.libertyinsurance.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_gic",
@@ -6549,6 +6579,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1800 6786",
     website: "https://gic.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_bsh",
@@ -6556,6 +6587,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 969609",
     website: "https://bshc.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_vni",
@@ -6563,6 +6595,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 969690",
     website: "https://bhdbv.com",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_baolong",
@@ -6570,6 +6603,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 545568",
     website: "https://baolonginsurance.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_tokio",
@@ -6577,6 +6611,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "024 3933 0704",
     website: "https://tokiomarine.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_uic",
@@ -6584,6 +6619,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 545586",
     website: "https://uic.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_samsung",
@@ -6591,6 +6627,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3823 7812",
     website: "https://www.samsungvina.com",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_vass",
@@ -6598,6 +6635,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 9249",
     website: "https://vass.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_aaa",
@@ -6605,6 +6643,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 545435",
     website: "https://aaa.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_aig",
@@ -6612,6 +6651,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3914 0065",
     website: "https://www.aig.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_qbe",
@@ -6619,6 +6659,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3827 5328",
     website: "https://www.qbe.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_abic",
@@ -6626,6 +6667,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "024 3795 6666",
     website: "https://abic.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_pac",
@@ -6633,6 +6675,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 5413 5966",
     website: "https://www.pac.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_msig",
@@ -6640,6 +6683,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "024 3936 9188",
     website: "https://www.msig.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_fubon",
@@ -6647,6 +6691,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3822 5588",
     website: "https://www.fubonins.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_lpbi",
@@ -6654,6 +6699,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 1898",
     website: "https://lpbi.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_cathay",
@@ -6661,6 +6707,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 6288 8385",
     website: "https://www.cathay-ins.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_opes",
@@ -6668,6 +6715,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1800 558855",
     website: "https://opes.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_hdi",
@@ -6675,6 +6723,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3824 2288",
     website: "https://www.hdi.global/vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_bhv",
@@ -6682,6 +6731,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 6535",
     website: "https://www.bhv.com.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_tic",
@@ -6689,6 +6739,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 1562",
     website: "https://tic.vn",
+    workingHours: "Hotline 24/7",
   },
   {
     id: "nl_chubb",
@@ -6696,6 +6747,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3910 7227",
     website: "https://www.chubb.com/vn-vn/",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_sgi",
@@ -6703,6 +6755,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "024 3933 6666",
     website: "https://sgic.co.kr",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_tcg",
@@ -6710,15 +6763,17 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "1900 633 666",
     website: "https://tcg.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:30",
   },
 
-  // --- TÁI BẢO HIỂM & MÔI GIỚI (OTHER) - 7 công ty ---
+  // --- TÁI BẢO HIỂM & MÔI GIỚI (OTHER) ---
   {
     id: "nl_vinare",
     name: "Tái bảo hiểm Quốc gia Việt Nam (VINARE)",
     type: "Non-Life",
     phone: "024 3942 2354",
     website: "https://www.vinare.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_pvire",
@@ -6726,6 +6781,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "024 3734 2299",
     website: "https://pvire.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_aon",
@@ -6733,6 +6789,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3822 8668",
     website: "https://www.aon.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_marsh",
@@ -6740,6 +6797,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3910 4666",
     website: "https://www.marsh.com/vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_wtw",
@@ -6747,6 +6805,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3820 6268",
     website: "https://www.wtwco.com",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_aeon",
@@ -6754,6 +6813,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3636 9088",
     website: "https://www.aeon.com.vn",
+    workingHours: "10:00 - 22:00 (Theo giờ TTTM)",
   },
   {
     id: "nl_toyota",
@@ -6761,6 +6821,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "024 3512 2888",
     website: "https://www.ttib.com.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
   {
     id: "nl_bolttech",
@@ -6768,6 +6829,7 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3812 5588",
     website: "https://bolttech.vn",
+    workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
   },
   {
     id: "nl_nama",
@@ -6775,5 +6837,6 @@ export const companiesData: InsuranceCompany[] = [
     type: "Non-Life",
     phone: "028 3910 1777",
     website: "https://namabroker.com",
+    workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
   },
 ];

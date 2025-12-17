@@ -1,5 +1,3 @@
-// file: app/cong-ty/page.tsx
-
 "use client";
 
 import React, { useState } from "react";
@@ -22,6 +20,7 @@ import {
   PhoneOutlined,
   BankOutlined,
   SafetyCertificateOutlined,
+  ClockCircleOutlined, // <--- Import thêm icon này
 } from "@ant-design/icons";
 import { companiesData } from "@/data/mockData";
 import { InsuranceCompany } from "@/types";
@@ -49,9 +48,6 @@ export default function InsuranceCompaniesPage() {
     return matchesSearch && matchesType;
   });
 
-  // --- ĐÃ XÓA useEffect GÂY LỖI ---
-  // Logic reset trang được chuyển xuống sự kiện onChange bên dưới
-
   // 4. Pagination Slicing Logic
   const startIndex = (currentPage - 1) * pageSize;
   const endIndex = startIndex + pageSize;
@@ -72,7 +68,8 @@ export default function InsuranceCompaniesPage() {
           Danh sách Công ty Bảo hiểm
         </Title>
         <Text type="secondary" style={{ fontSize: 16 }}>
-          Tra cứu thông tin liên hệ các công ty bảo hiểm uy tín tại Việt Nam
+          Tra cứu thông tin liên hệ và thời gian hoạt động của các công ty bảo
+          hiểm
         </Text>
       </div>
 
@@ -92,7 +89,6 @@ export default function InsuranceCompaniesPage() {
               placeholder="Tìm kiếm tên công ty..."
               prefix={<SearchOutlined style={{ color: "#bfbfbf" }} />}
               value={searchTerm}
-              // SỬA LỖI TẠI ĐÂY: Reset trang khi nhập liệu
               onChange={(e) => {
                 setSearchTerm(e.target.value);
                 setCurrentPage(1);
@@ -105,7 +101,6 @@ export default function InsuranceCompaniesPage() {
               size="large"
               defaultValue="All"
               style={{ width: "100%" }}
-              // SỬA LỖI TẠI ĐÂY: Reset trang khi chọn loại hình
               onChange={(value) => {
                 setFilterType(value as "All" | "Life" | "Non-Life");
                 setCurrentPage(1);
@@ -212,6 +207,7 @@ export default function InsuranceCompaniesPage() {
                       borderTop: "1px solid #f0f0f0",
                     }}
                   >
+                    {/* PHONE */}
                     <div
                       style={{
                         display: "flex",
@@ -222,14 +218,40 @@ export default function InsuranceCompaniesPage() {
                       <PhoneOutlined
                         style={{ color: "#8c8c8c", marginRight: 8 }}
                       />
-                      <Text>{item.phone}</Text>
+                      <Text copyable={{ text: item.phone }}>{item.phone}</Text>
                     </div>
+
+                    {/* WORKING HOURS (Mới thêm) */}
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        marginBottom: 8,
+                      }}
+                    >
+                      <ClockCircleOutlined
+                        style={{ color: "#8c8c8c", marginRight: 8 }}
+                      />
+                      <Text type="secondary">
+                        {/* Fallback nếu data chưa cập nhật */}
+                        {item.workingHours || "Hotline 24/7"}
+                      </Text>
+                    </div>
+
+                    {/* WEBSITE */}
                     <div style={{ display: "flex", alignItems: "center" }}>
                       <GlobalOutlined
                         style={{ color: "#8c8c8c", marginRight: 8 }}
                       />
                       <Text ellipsis style={{ maxWidth: 200 }}>
-                        {item.website.replace("https://", "")}
+                        <a
+                          href={item.website}
+                          target="_blank"
+                          rel="noreferrer"
+                          style={{ color: "inherit" }}
+                        >
+                          {item.website.replace(/^https?:\/\/(www\.)?/, "")}
+                        </a>
                       </Text>
                     </div>
                   </div>
