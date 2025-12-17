@@ -199,7 +199,7 @@ const Home: React.FC = () => {
           <Col xs={12} md={6} style={{ textAlign: "center" }}>
             <Statistic
               title="Hài lòng"
-              value={99}
+              value={84}
               suffix="%"
               styles={{ content: { color: "#0050b3", fontWeight: 700 } }}
             />
