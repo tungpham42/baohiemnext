@@ -1,20 +1,23 @@
+// file: app/page.tsx (or Home.tsx)
+
 "use client";
 
 import React from "react";
 import { Typography, Card, Row, Col, Button, Space, Statistic } from "antd";
-import { useRouter } from "next/navigation"; // Changed from useNavigate/navigate
+import { useRouter } from "next/navigation";
 import {
   BookOutlined,
   MedicineBoxOutlined,
   ReconciliationOutlined,
   ArrowRightOutlined,
   SafetyCertificateOutlined,
+  BankOutlined,
 } from "@ant-design/icons";
 
 const { Title, Paragraph, Text } = Typography;
 
 const Home: React.FC = () => {
-  const router = useRouter(); // Initialize Next.js router
+  const router = useRouter();
 
   const features = [
     {
@@ -24,7 +27,7 @@ const Home: React.FC = () => {
       description:
         "Tra cứu hơn 400 thuật ngữ chuyên ngành bảo hiểm với định nghĩa chi tiết và dễ hiểu.",
       link: "/thuat-ngu",
-      color: "#e6f7ff",
+      color: "#e6f7ff", // Blue
     },
     {
       key: "benh-vien",
@@ -35,7 +38,16 @@ const Home: React.FC = () => {
       description:
         "Tìm kiếm bệnh viện, phòng khám trong mạng lưới bảo lãnh viện phí trên toàn quốc.",
       link: "/benh-vien",
-      color: "#f6ffed",
+      color: "#f6ffed", // Green
+    },
+    {
+      key: "cong-ty",
+      title: "Công ty Bảo hiểm",
+      icon: <BankOutlined style={{ fontSize: "32px", color: "#722ed1" }} />,
+      description:
+        "Danh sách hotline và thông tin liên hệ của hơn 50 công ty bảo hiểm nhân thọ & phi nhân thọ.",
+      link: "/cong-ty",
+      color: "#f9f0ff", // Purple
     },
     {
       key: "boi-thuong",
@@ -48,7 +60,7 @@ const Home: React.FC = () => {
       description:
         "Hướng dẫn chi tiết các bước nộp hồ sơ và theo dõi trạng thái bồi thường.",
       link: "/boi-thuong",
-      color: "#fffbe6",
+      color: "#fffbe6", // Gold
     },
   ];
 
@@ -73,22 +85,21 @@ const Home: React.FC = () => {
           Nền tảng cung cấp thông tin minh bạch, giúp bạn dễ dàng tra cứu quyền
           lợi, mạng lưới y tế và quy trình giải quyết quyền lợi bảo hiểm.
         </Paragraph>
-        <Space size="large">
+        <Space size="large" wrap>
           <Button
             type="primary"
             size="large"
             shape="round"
             onClick={() => router.push("/thuat-ngu")}
           >
-            Tra cứu ngay
+            Tra cứu thuật ngữ
           </Button>
           <Button
-            type="primary"
             size="large"
             shape="round"
-            onClick={() => router.push("/benh-vien")}
+            onClick={() => router.push("/cong-ty")}
           >
-            Tìm bệnh viện
+            Tìm công ty bảo hiểm
           </Button>
         </Space>
       </div>
@@ -96,7 +107,7 @@ const Home: React.FC = () => {
       {/* Feature Cards */}
       <Row gutter={[24, 24]}>
         {features.map((item) => (
-          <Col xs={24} md={8} key={item.key}>
+          <Col xs={24} sm={12} xl={6} key={item.key}>
             <Card
               hoverable
               style={{
@@ -128,10 +139,10 @@ const Home: React.FC = () => {
               >
                 {item.icon}
               </div>
-              <Title level={3} style={{ marginBottom: 16 }}>
+              <Title level={3} style={{ marginBottom: 16, fontSize: 20 }}>
                 {item.title}
               </Title>
-              <Paragraph style={{ color: "#666", flex: 1, fontSize: 16 }}>
+              <Paragraph style={{ color: "#666", flex: 1, fontSize: 15 }}>
                 {item.description}
               </Paragraph>
               <div style={{ marginTop: 16 }}>
@@ -160,7 +171,7 @@ const Home: React.FC = () => {
           borderRadius: 16,
         }}
       >
-        <Row gutter={24} justify="center">
+        <Row gutter={[24, 24]} justify="center">
           <Col xs={12} md={6} style={{ textAlign: "center" }}>
             <Statistic
               title="Thuật ngữ"
@@ -179,8 +190,16 @@ const Home: React.FC = () => {
           </Col>
           <Col xs={12} md={6} style={{ textAlign: "center" }}>
             <Statistic
+              title="Công ty liên kết"
+              value={50}
+              suffix="+"
+              styles={{ content: { color: "#0050b3", fontWeight: 700 } }}
+            />
+          </Col>
+          <Col xs={12} md={6} style={{ textAlign: "center" }}>
+            <Statistic
               title="Hài lòng"
-              value={84}
+              value={99}
               suffix="%"
               styles={{ content: { color: "#0050b3", fontWeight: 700 } }}
             />

@@ -11,6 +11,7 @@ import {
   SafetyCertificateFilled,
   VerticalAlignTopOutlined,
   ReconciliationOutlined,
+  BankOutlined,
 } from "@ant-design/icons";
 
 const { Header, Content, Footer } = Layout;
@@ -34,6 +35,11 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       key: "/benh-vien",
       icon: <MedicineBoxOutlined />,
       label: <Link href="/benh-vien">Mạng lưới Bệnh viện</Link>,
+    },
+    {
+      key: "/cong-ty",
+      icon: <BankOutlined />,
+      label: <Link href="/cong-ty">Công ty Bảo hiểm</Link>,
     },
     {
       key: "/boi-thuong",

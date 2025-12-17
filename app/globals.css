@@ -47,8 +47,13 @@ body {
   border-color: var(--primary-color) !important;
 }
 
-.ant-btn-default span {
+.ant-btn-default span,
+.ant-btn-link span {
   color: var(--primary-color) !important;
+}
+
+.ant-btn-link > span.ant-btn-icon {
+  margin-right: 4px;
 }
 
 .ant-btn {

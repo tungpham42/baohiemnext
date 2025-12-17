@@ -26,3 +26,12 @@ export interface Hospital {
   phone: string;
   type: "Public" | "Private" | "International";
 }
+
+export interface InsuranceCompany {
+  id: string;
+  name: string;
+  type: "Life" | "Non-Life"; // Nhân thọ | Phi nhân thọ
+  phone: string;
+  website: string;
+  logo?: string; // (Optional) Link logo
+}
