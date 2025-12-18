@@ -336,7 +336,7 @@ const Hospitals: React.FC = () => {
                           ghost
                           icon={<PhoneFilled />}
                           block
-                          href={`tel:${item.phone}`}
+                          href={`tel:${item.phone.replace(/\s/g, "")}`}
                           style={{ borderRadius: 6, fontWeight: 600 }}
                         >
                           Gọi
