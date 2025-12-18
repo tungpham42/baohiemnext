@@ -295,7 +295,7 @@ export default function InsuranceCompaniesPage() {
                       <Text
                         strong
                         style={{ color: "#ff4d4f", fontSize: 14 }}
-                        copyable
+                        copyable={{ tooltips: ["Sao chép", "Đã sao chép"] }}
                       >
                         {item.phone}
                       </Text>
