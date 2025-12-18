@@ -35,4 +35,6 @@ export interface InsuranceCompany {
   website: string;
   logo?: string; // (Optional) Link logo
   workingHours: string;
+  headquarters: string; // Trụ sở chính (Thành phố/Tòa nhà)
+  charterCapital: string; // Vốn điều lệ (Ví dụ: "22.220 tỷ đồng")
 }

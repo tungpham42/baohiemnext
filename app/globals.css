@@ -48,11 +48,13 @@ body {
 }
 
 .ant-btn-default span,
-.ant-btn-link span {
+.ant-btn-link span,
+.ant-btn-variant-text span {
   color: var(--primary-color) !important;
 }
 
-.ant-btn-link > span.ant-btn-icon {
+.ant-btn-link > span.ant-btn-icon,
+.ant-btn-variant-text > span.ant-btn-icon {
   margin-right: 4px;
 }
 
@@ -85,4 +87,11 @@ body {
 .page-subtitle {
   color: #666;
   font-size: 16px;
+}
+
+.ant-card-actions > li > span,
+.ant-btn-text.ant-btn-color-default.ant-btn-variant-text {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }

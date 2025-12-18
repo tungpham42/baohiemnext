@@ -6362,6 +6362,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 558899",
     website: "https://baovietnhantho.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà Tài chính Bảo Việt, 233 Đồng Khởi, Q.1, TP.HCM", // Trụ sở theo đăng ký kinh doanh chính
+    charterCapital: "6.000 tỷ đồng",
   },
   {
     id: "l_manu",
@@ -6370,6 +6372,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 1776",
     website: "https://www.manulife.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tòa nhà Manulife Plaza, 75 Hoàng Văn Thái, Q.7, TP.HCM",
+    charterCapital: "22.220 tỷ đồng",
   },
   {
     id: "l_pru",
@@ -6378,6 +6382,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1800 1247",
     website: "https://www.prudential.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà Saigon Trade Center, 37 Tôn Đức Thắng, Q.1, TP.HCM",
+    charterCapital: "7.428 tỷ đồng",
   },
   {
     id: "l_aia",
@@ -6386,6 +6392,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3812 2777",
     website: "https://www.aia.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:30",
+    headquarters: "Tòa nhà Saigon Centre, 67 Lê Lợi, Q.1, TP.HCM",
+    charterCapital: "3.244 tỷ đồng",
   },
   {
     id: "l_dai",
@@ -6394,6 +6402,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3810 0888",
     website: "https://www.dai-ichi-life.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "149-151 Nguyễn Văn Trỗi, Q. Phú Nhuận, TP.HCM",
+    charterCapital: "9.800 tỷ đồng",
   },
   {
     id: "l_chubb",
@@ -6402,6 +6412,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3827 8123",
     website: "https://www.chubb.com/vn-vn/",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tòa nhà Sun Wah, 115 Nguyễn Huệ, Q.1, TP.HCM",
+    charterCapital: "17.912 tỷ đồng",
   },
   {
     id: "l_gen",
@@ -6410,6 +6422,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 969675",
     website: "https://generali-life.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà A&B, 76 Lê Lai, Q.1, TP.HCM",
+    charterCapital: "7.202 tỷ đồng",
   },
   {
     id: "l_han",
@@ -6418,6 +6432,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 5555 22",
     website: "https://www.hanwhalife.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà Diamond Plaza, 34 Lê Duẩn, Q.1, TP.HCM",
+    charterCapital: "4.891 tỷ đồng",
   },
   {
     id: "l_mb",
@@ -6426,6 +6442,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 2229 8888",
     website: "https://www.mbageas.life",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà MB, 21 Cát Linh, Đống Đa, Hà Nội",
+    charterCapital: "1.500 tỷ đồng",
   },
   {
     id: "l_fwd",
@@ -6434,6 +6452,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1800 969690",
     website: "https://www.fwd.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà Diamond Plaza, 34 Lê Duẩn, Q.1, TP.HCM",
+    charterCapital: "19.102 tỷ đồng",
   },
   {
     id: "l_sun",
@@ -6442,6 +6462,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1800 1786",
     website: "https://www.sunlife.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà Sun Life Flagship, 244 Pasteur, Q.3, TP.HCM",
+    charterCapital: "16.480 tỷ đồng",
   },
   {
     id: "l_cathay",
@@ -6450,6 +6472,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 6255 6393",
     website: "https://www.cathaylife.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tòa nhà The World Center, 46 Phạm Ngọc Thạch, Q.3, TP.HCM",
+    charterCapital: "15.310 tỷ đồng",
   },
   {
     id: "l_map",
@@ -6458,6 +6482,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3936 6666",
     website: "https://www.map-life.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tòa nhà CornerStone, 16 Phan Chu Trinh, Hoàn Kiếm, Hà Nội",
+    charterCapital: "1.050 tỷ đồng",
   },
   {
     id: "l_fubon",
@@ -6466,6 +6492,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3933 5566",
     website: "https://www.fubonlife.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tòa nhà Paragon, 3 Nguyễn Lương Bằng, Q.7, TP.HCM",
+    charterCapital: "1.400 tỷ đồng",
   },
   {
     id: "l_bidv",
@@ -6474,6 +6502,9 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 6282 0808",
     website: "https://www.bidvmetlife.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters:
+      "Tòa nhà Vincom City Towers, 191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    charterCapital: "1.000 tỷ đồng",
   },
   {
     id: "l_phuhung",
@@ -6482,6 +6513,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 5413 5999",
     website: "https://www.phuhunglife.com",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tòa nhà Phú Hưng, CR3-15B Nguyễn Lương Bằng, Q.7, TP.HCM",
+    charterCapital: "2.259 tỷ đồng",
   },
   {
     id: "l_mvi",
@@ -6490,6 +6523,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 633 369",
     website: "https://www.mvilife.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà MIPEC, 229 Tây Sơn, Đống Đa, Hà Nội",
+    charterCapital: "11.550 tỷ đồng",
   },
   {
     id: "l_shinhan",
@@ -6498,6 +6533,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 272727",
     website: "https://shinhanlifevn.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà Friendship Tower, 31 Lê Duẩn, Q.1, TP.HCM",
+    charterCapital: "2.320 tỷ đồng",
   },
 
   // --- PHI NHÂN THỌ (NON-LIFE) ---
@@ -6508,6 +6545,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 558899",
     website: "https://baovietonline.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "35 Hai Bà Trưng, Q. Hoàn Kiếm, Hà Nội",
+    charterCapital: "2.900 tỷ đồng",
   },
   {
     id: "nl_pvi",
@@ -6516,6 +6555,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 545458",
     website: "https://www.pvi.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà PVI, 1 Phạm Văn Bạch, Cầu Giấy, Hà Nội",
+    charterCapital: "3.500 tỷ đồng",
   },
   {
     id: "nl_pti",
@@ -6524,6 +6565,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 545475",
     website: "https://www.pti.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "95 Trần Thái Tông, Cầu Giấy, Hà Nội",
+    charterCapital: "804 tỷ đồng",
   },
   {
     id: "nl_mic",
@@ -6532,6 +6575,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 558891",
     website: "https://www.mic.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà MB, 54 Liễu Giai, Ba Đình, Hà Nội",
+    charterCapital: "1.728 tỷ đồng",
   },
   {
     id: "nl_bmi",
@@ -6540,6 +6585,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1800 588812",
     website: "https://www.baominh.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "26 Tôn Thất Đạm, Q.1, TP.HCM",
+    charterCapital: "1.100 tỷ đồng",
   },
   {
     id: "nl_pjico",
@@ -6548,6 +6595,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 545455",
     website: "https://www.pjico.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 21-22, Tòa nhà MIPEC, 229 Tây Sơn, Đống Đa, Hà Nội",
+    charterCapital: "1.108 tỷ đồng",
   },
   {
     id: "nl_bic",
@@ -6556,6 +6605,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 9456",
     website: "https://www.bic.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 11, Tòa nhà BIDV, 263 Cầu Giấy, Hà Nội",
+    charterCapital: "1.173 tỷ đồng",
   },
   {
     id: "nl_vbi",
@@ -6564,6 +6615,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 1566",
     website: "https://vbi.vietinbank.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "126 Đội Cấn, Ba Đình, Hà Nội",
+    charterCapital: "667 tỷ đồng",
   },
   {
     id: "nl_lib",
@@ -6572,6 +6625,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1800 599998",
     website: "https://www.libertyinsurance.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tòa nhà Kumho Asiana Plaza, 39 Lê Duẩn, Q.1, TP.HCM",
+    charterCapital: "1.339 tỷ đồng",
   },
   {
     id: "nl_gic",
@@ -6580,6 +6635,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1800 6786",
     website: "https://gic.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 16, Tòa nhà Nam Á, 201-203 CMT8, Q.3, TP.HCM",
+    charterCapital: "400 tỷ đồng",
   },
   {
     id: "nl_bsh",
@@ -6588,6 +6645,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 969609",
     website: "https://bshc.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "86 Bà Triệu, Hoàn Kiếm, Hà Nội",
+    charterCapital: "1.000 tỷ đồng",
   },
   {
     id: "nl_vni",
@@ -6596,6 +6655,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 969690",
     website: "https://bhdbv.com",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 15, Tòa nhà Geleximco, 36 Hoàng Cầu, Đống Đa, Hà Nội",
+    charterCapital: "1.000 tỷ đồng",
   },
   {
     id: "nl_baolong",
@@ -6604,6 +6665,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 545568",
     website: "https://baolonginsurance.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "185 Điện Biên Phủ, Đa Kao, Q.1, TP.HCM",
+    charterCapital: "600 tỷ đồng",
   },
   {
     id: "nl_tokio",
@@ -6612,6 +6675,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3933 0704",
     website: "https://tokiomarine.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tòa nhà Lotte Center, 54 Liễu Giai, Ba Đình, Hà Nội",
+    charterCapital: "300 tỷ đồng",
   },
   {
     id: "nl_uic",
@@ -6620,6 +6685,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 545586",
     website: "https://uic.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tầng 9, Tòa nhà Tung Shing, 2 Ngô Quyền, Hà Nội",
+    charterCapital: "300 tỷ đồng",
   },
   {
     id: "nl_samsung",
@@ -6628,6 +6695,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3823 7812",
     website: "https://www.samsungvina.com",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tầng 45, Bitexco Financial Tower, 2 Hải Triều, Q.1, TP.HCM",
+    charterCapital: "1.000 tỷ đồng",
   },
   {
     id: "nl_vass",
@@ -6636,6 +6705,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 9249",
     website: "https://vass.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "19 Phùng Khắc Khoan, Q.1, TP.HCM",
+    charterCapital: "500 tỷ đồng",
   },
   {
     id: "nl_aaa",
@@ -6644,6 +6715,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 545435",
     website: "https://aaa.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "119-121 Lý Chính Thắng, Q.3, TP.HCM",
+    charterCapital: "1.122 tỷ đồng",
   },
   {
     id: "nl_aig",
@@ -6652,6 +6725,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3914 0065",
     website: "https://www.aig.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tầng 9, Saigon Centre, 65 Lê Lợi, Q.1, TP.HCM",
+    charterCapital: "634 tỷ đồng",
   },
   {
     id: "nl_qbe",
@@ -6660,6 +6735,9 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3827 5328",
     website: "https://www.qbe.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters:
+      "Tầng 13, Unit 1302A, Metropolitan, 235 Đồng Khởi, Q.1, TP.HCM",
+    charterCapital: "492 tỷ đồng",
   },
   {
     id: "nl_abic",
@@ -6668,6 +6746,9 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3795 6666",
     website: "https://abic.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters:
+      "Tầng 11, Tòa nhà Vinafood 1, 94 Lương Yên, Hai Bà Trưng, Hà Nội",
+    charterCapital: "532 tỷ đồng",
   },
   {
     id: "nl_pac",
@@ -6676,6 +6757,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 5413 5966",
     website: "https://www.pac.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 5, CR3-15B Nguyễn Lương Bằng, Q.7, TP.HCM",
+    charterCapital: "500 tỷ đồng",
   },
   {
     id: "nl_msig",
@@ -6684,6 +6767,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3936 9188",
     website: "https://www.msig.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tầng 10, Tòa nhà CornerStone, 16 Phan Chu Trinh, Hà Nội",
+    charterCapital: "500 tỷ đồng",
   },
   {
     id: "nl_fubon",
@@ -6692,6 +6777,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3822 5588",
     website: "https://www.fubonins.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tầng 10, Tòa nhà Paragon, 3 Nguyễn Lương Bằng, Q.7, TP.HCM",
+    charterCapital: "500 tỷ đồng",
   },
   {
     id: "nl_lpbi",
@@ -6700,6 +6787,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 1898",
     website: "https://lpbi.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 6, Thaiholdings Tower, 17 Tông Đản, Hoàn Kiếm, Hà Nội",
+    charterCapital: "800 tỷ đồng",
   },
   {
     id: "nl_cathay",
@@ -6708,6 +6797,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 6288 8385",
     website: "https://www.cathay-ins.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tòa nhà Plaza, 46 Phạm Ngọc Thạch, Q.3, TP.HCM",
+    charterCapital: "400 tỷ đồng",
   },
   {
     id: "nl_opes",
@@ -6716,6 +6807,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1800 558855",
     website: "https://opes.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 6, Tòa nhà VPBank, 89 Láng Hạ, Đống Đa, Hà Nội",
+    charterCapital: "550 tỷ đồng",
   },
   {
     id: "nl_hdi",
@@ -6724,6 +6817,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3824 2288",
     website: "https://www.hdi.global/vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tầng 9, Tòa nhà Abacus, 58 Nguyễn Du, Q.1, TP.HCM",
+    charterCapital: "485 tỷ đồng",
   },
   {
     id: "nl_bhv",
@@ -6732,6 +6827,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 6535",
     website: "https://www.bhv.com.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Số 2 Trần Phú, Hà Đông, Hà Nội",
+    charterCapital: "500 tỷ đồng",
   },
   {
     id: "nl_tic",
@@ -6740,6 +6837,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 1562",
     website: "https://tic.vn",
     workingHours: "Hotline 24/7",
+    headquarters: "Tầng 4, Tòa nhà The Manor, Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    charterCapital: "405 tỷ đồng",
   },
   {
     id: "nl_chubb",
@@ -6748,6 +6847,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3910 7227",
     website: "https://www.chubb.com/vn-vn/",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tầng 8, Saigon Centre, 65 Lê Lợi, Q.1, TP.HCM",
+    charterCapital: "394 tỷ đồng",
   },
   {
     id: "nl_sgi",
@@ -6756,6 +6857,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3933 6666",
     website: "https://sgic.co.kr",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tầng 25, Keangnam Landmark 72, Nam Từ Liêm, Hà Nội",
+    charterCapital: "600 tỷ đồng",
   },
   {
     id: "nl_tcg",
@@ -6764,6 +6867,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "1900 633 666",
     website: "https://tcg.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:30",
+    headquarters: "Số 6 Quang Trung, Hoàn Kiếm, Hà Nội",
+    charterCapital: "500 tỷ đồng",
   },
 
   // --- TÁI BẢO HIỂM & MÔI GIỚI (OTHER) ---
@@ -6774,6 +6879,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3942 2354",
     website: "https://www.vinare.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "141 Lê Duẩn, Hoàn Kiếm, Hà Nội",
+    charterCapital: "1.507 tỷ đồng",
   },
   {
     id: "nl_pvire",
@@ -6782,6 +6889,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3734 2299",
     website: "https://pvire.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tầng 25, Tòa nhà PVI, 1 Phạm Văn Bạch, Cầu Giấy, Hà Nội",
+    charterCapital: "1.044 tỷ đồng",
   },
   {
     id: "nl_aon",
@@ -6790,6 +6899,9 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3822 8668",
     website: "https://www.aon.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters:
+      "Unit 3, Tầng 19, Exchange Tower, 1 Nam Kỳ Khởi Nghĩa, Q.1, TP.HCM",
+    charterCapital: "23,4 tỷ đồng", // Vốn pháp định tối thiểu cho môi giới có vốn nước ngoài
   },
   {
     id: "nl_marsh",
@@ -6798,6 +6910,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3910 4666",
     website: "https://www.marsh.com/vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tầng 32, Bitexco Financial Tower, 2 Hải Triều, Q.1, TP.HCM",
+    charterCapital: "96,6 tỷ đồng",
   },
   {
     id: "nl_wtw",
@@ -6806,6 +6920,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3820 6268",
     website: "https://www.wtwco.com",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Unit 3, Tầng 21, Saigon Centre, 65 Lê Lợi, Q.1, TP.HCM",
+    charterCapital: "Đang cập nhật",
   },
   {
     id: "nl_aeon",
@@ -6814,6 +6930,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3636 9088",
     website: "https://www.aeon.com.vn",
     workingHours: "10:00 - 22:00 (Theo giờ TTTM)",
+    headquarters: "30 Bờ Bao Tân Thắng, Sơn Kỳ, Tân Phú, TP.HCM",
+    charterCapital: "Đang cập nhật",
   },
   {
     id: "nl_toyota",
@@ -6822,6 +6940,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "024 3512 2888",
     website: "https://www.ttib.com.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters: "Tầng 7, Tòa nhà Sun Red River, 23 Phan Chu Trinh, Hà Nội",
+    charterCapital: "9 tỷ đồng",
   },
   {
     id: "nl_bolttech",
@@ -6830,6 +6950,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3812 5588",
     website: "https://bolttech.vn",
     workingHours: "Thứ 2 - Thứ 6: 08:30 - 17:30",
+    headquarters: "Tầng 2, Tòa nhà Etown 1, 364 Cộng Hòa, Tân Bình, TP.HCM",
+    charterCapital: "80 tỷ đồng",
   },
   {
     id: "nl_nama",
@@ -6838,5 +6960,8 @@ export const companiesData: InsuranceCompany[] = [
     phone: "028 3910 1777",
     website: "https://namabroker.com",
     workingHours: "Thứ 2 - Thứ 6: 08:00 - 17:00",
+    headquarters:
+      "Tầng 5, Tòa nhà Nam Á, 201-203 Cách Mạng Tháng 8, Q.3, TP.HCM",
+    charterCapital: "8 tỷ đồng",
   },
 ];

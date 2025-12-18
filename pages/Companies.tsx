@@ -13,6 +13,8 @@ import {
   Avatar,
   Empty,
   Pagination,
+  Modal,
+  Tooltip,
 } from "antd";
 import {
   SearchOutlined,
@@ -20,7 +22,9 @@ import {
   PhoneOutlined,
   BankOutlined,
   SafetyCertificateOutlined,
-  ClockCircleOutlined, // <--- Import thêm icon này
+  ClockCircleOutlined,
+  EnvironmentOutlined, // Icon địa điểm
+  DollarCircleOutlined, // Icon tiền tệ
 } from "@ant-design/icons";
 import { companiesData } from "@/data/mockData";
 import { InsuranceCompany } from "@/types";
@@ -39,7 +43,12 @@ export default function InsuranceCompaniesPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(12);
 
-  // 3. Filter Logic
+  // 3. State for Map Modal
+  const [isMapModalVisible, setIsMapModalVisible] = useState(false);
+  const [selectedCompany, setSelectedCompany] =
+    useState<InsuranceCompany | null>(null);
+
+  // 4. Filter Logic
   const filteredCompanies = companiesData.filter((company) => {
     const matchesSearch = company.name
       .toLowerCase()
@@ -48,17 +57,23 @@ export default function InsuranceCompaniesPage() {
     return matchesSearch && matchesType;
   });
 
-  // 4. Pagination Slicing Logic
+  // 5. Pagination Slicing Logic
   const startIndex = (currentPage - 1) * pageSize;
   const endIndex = startIndex + pageSize;
   const paginatedData = filteredCompanies.slice(startIndex, endIndex);
 
-  // Helper to get badge color
+  // Helper: Get badge color
   const getTypeTag = (type: "Life" | "Non-Life") => {
     if (type === "Life") {
       return <Tag color="green">Nhân thọ</Tag>;
     }
     return <Tag color="blue">Phi nhân thọ</Tag>;
+  };
+
+  // Helper: Open Map
+  const handleOpenMap = (company: InsuranceCompany) => {
+    setSelectedCompany(company);
+    setIsMapModalVisible(true);
   };
 
   return (
@@ -68,8 +83,7 @@ export default function InsuranceCompaniesPage() {
           Danh sách Công ty Bảo hiểm
         </Title>
         <Text type="secondary" style={{ fontSize: 16 }}>
-          Tra cứu thông tin liên hệ và thời gian hoạt động của các công ty bảo
-          hiểm
+          Tra cứu thông tin liên hệ, trụ sở và quy mô của các công ty bảo hiểm
         </Text>
       </div>
 
@@ -131,35 +145,48 @@ export default function InsuranceCompaniesPage() {
                     borderRadius: 12,
                     display: "flex",
                     flexDirection: "column",
+                    borderColor: "#f0f0f0",
                   }}
                   styles={{
                     body: {
                       flex: 1,
                       display: "flex",
                       flexDirection: "column",
+                      padding: 20,
                     },
                   }}
                   actions={[
-                    <Button
-                      key="web"
-                      type="link"
-                      icon={<GlobalOutlined />}
-                      href={item.website}
-                      target="_blank"
-                    >
-                      Website
-                    </Button>,
-                    <Button
-                      key="call"
-                      type="link"
-                      icon={<PhoneOutlined />}
-                      href={`tel:${item.phone.replace(/\s/g, "")}`}
-                      danger
-                    >
-                      Gọi ngay
-                    </Button>,
+                    <Tooltip title="Xem bản đồ" key="map">
+                      <Button
+                        type="text"
+                        icon={<EnvironmentOutlined />}
+                        onClick={() => handleOpenMap(item)}
+                      >
+                        Bản đồ
+                      </Button>
+                    </Tooltip>,
+                    <Tooltip title="Truy cập Website" key="web">
+                      <Button
+                        type="text"
+                        icon={<GlobalOutlined />}
+                        href={item.website}
+                        target="_blank"
+                      >
+                        Web
+                      </Button>
+                    </Tooltip>,
+                    <Tooltip title="Gọi hotline" key="call">
+                      <Button
+                        type="text"
+                        icon={<PhoneOutlined />}
+                        href={`tel:${item.phone.replace(/\s/g, "")}`}
+                      >
+                        Gọi
+                      </Button>
+                    </Tooltip>,
                   ]}
                 >
+                  {/* HEADER CARD */}
                   <div
                     style={{
                       display: "flex",
@@ -169,12 +196,13 @@ export default function InsuranceCompaniesPage() {
                   >
                     <Avatar
                       shape="square"
-                      size={48}
+                      size={54}
                       style={{
                         backgroundColor:
                           item.type === "Life" ? "#f6ffed" : "#e6f7ff",
                         color: item.type === "Life" ? "#52c41a" : "#1890ff",
                         marginRight: 16,
+                        flexShrink: 0,
                       }}
                       icon={
                         item.type === "Life" ? (
@@ -190,8 +218,9 @@ export default function InsuranceCompaniesPage() {
                         style={{
                           fontSize: 16,
                           display: "block",
-                          lineHeight: 1.4,
-                          marginBottom: 4,
+                          lineHeight: 1.3,
+                          marginBottom: 6,
+                          color: "#262626",
                         }}
                       >
                         {item.name}
@@ -200,58 +229,75 @@ export default function InsuranceCompaniesPage() {
                     </div>
                   </div>
 
+                  {/* BODY CARD INFO */}
                   <div
                     style={{
                       marginTop: "auto",
                       paddingTop: 16,
-                      borderTop: "1px solid #f0f0f0",
+                      borderTop: "1px dashed #f0f0f0",
                     }}
                   >
-                    {/* PHONE */}
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        marginBottom: 8,
-                      }}
-                    >
-                      <PhoneOutlined
-                        style={{ color: "#8c8c8c", marginRight: 8 }}
+                    {/* VỐN ĐIỀU LỆ */}
+                    <div style={{ marginBottom: 8, display: "flex" }}>
+                      <DollarCircleOutlined
+                        style={{
+                          color: "#faad14",
+                          marginRight: 10,
+                          marginTop: 4,
+                        }}
                       />
-                      <Text copyable={{ text: item.phone }}>{item.phone}</Text>
-                    </div>
-
-                    {/* WORKING HOURS (Mới thêm) */}
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        marginBottom: 8,
-                      }}
-                    >
-                      <ClockCircleOutlined
-                        style={{ color: "#8c8c8c", marginRight: 8 }}
-                      />
-                      <Text type="secondary">
-                        {/* Fallback nếu data chưa cập nhật */}
-                        {item.workingHours || "Hotline 24/7"}
+                      <Text>
+                        Vốn điều lệ: <strong>{item.charterCapital}</strong>
                       </Text>
                     </div>
 
-                    {/* WEBSITE */}
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                      <GlobalOutlined
-                        style={{ color: "#8c8c8c", marginRight: 8 }}
+                    {/* TRỤ SỞ CHÍNH */}
+                    <div style={{ marginBottom: 8, display: "flex" }}>
+                      <EnvironmentOutlined
+                        style={{
+                          color: "#ff4d4f",
+                          marginRight: 10,
+                          marginTop: 4,
+                        }}
                       />
-                      <Text ellipsis style={{ maxWidth: 200 }}>
-                        <a
-                          href={item.website}
-                          target="_blank"
-                          rel="noreferrer"
-                          style={{ color: "inherit" }}
+                      <div style={{ flex: 1 }}>
+                        <Text
+                          type="secondary"
+                          style={{ fontSize: 13, cursor: "pointer" }}
+                          onClick={() => handleOpenMap(item)}
+                          title="Bấm để xem bản đồ"
                         >
-                          {item.website.replace(/^https?:\/\/(www\.)?/, "")}
-                        </a>
+                          {item.headquarters}
+                        </Text>
+                      </div>
+                    </div>
+
+                    {/* GIỜ LÀM VIỆC & PHONE */}
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        marginTop: 12,
+                        background: "#fafafa",
+                        padding: "8px 12px",
+                        borderRadius: 6,
+                      }}
+                    >
+                      <div style={{ display: "flex", alignItems: "center" }}>
+                        <ClockCircleOutlined
+                          style={{ color: "#8c8c8c", marginRight: 6 }}
+                        />
+                        <Text type="secondary" style={{ fontSize: 12 }}>
+                          {item.workingHours}
+                        </Text>
+                      </div>
+                      <Text
+                        strong
+                        style={{ color: "#ff4d4f", fontSize: 14 }}
+                        copyable
+                      >
+                        {item.phone}
                       </Text>
                     </div>
                   </div>
@@ -278,7 +324,7 @@ export default function InsuranceCompaniesPage() {
               }}
               showSizeChanger
               locale={{ items_per_page: "/ trang" }}
-              pageSizeOptions={["12", "24", "36", "48", "60"]}
+              pageSizeOptions={["12", "24", "36", "48"]}
               showTotal={(total, range) => (
                 <Text type="secondary">
                   Hiển thị {range[0]}-{range[1]} của <strong>{total}</strong>{" "}
@@ -294,6 +340,49 @@ export default function InsuranceCompaniesPage() {
           style={{ marginTop: 60 }}
         />
       )}
+
+      {/* MAP MODAL */}
+      <Modal
+        title={
+          <span>
+            <EnvironmentOutlined style={{ color: "#ff4d4f", marginRight: 8 }} />
+            {selectedCompany?.name} - Trụ sở chính
+          </span>
+        }
+        open={isMapModalVisible}
+        onCancel={() => setIsMapModalVisible(false)}
+        footer={null}
+        width={800}
+        centered
+        styles={{ body: { padding: 0 } }}
+      >
+        {selectedCompany && (
+          <div style={{ position: "relative", width: "100%", height: "450px" }}>
+            <iframe
+              title="Company Location"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                selectedCompany.headquarters
+              )}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+            ></iframe>
+            <div
+              style={{
+                padding: "12px 16px",
+                background: "#f5f5f5",
+                borderTop: "1px solid #e8e8e8",
+                position: "absolute",
+                bottom: 0,
+              }}
+            >
+              <Text strong>Địa chỉ:</Text> {selectedCompany.headquarters}
+            </div>
+          </div>
+        )}
+      </Modal>
     </div>
   );
 }
