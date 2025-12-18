@@ -351,7 +351,23 @@ export default function InsuranceCompaniesPage() {
         }
         open={isMapModalVisible}
         onCancel={() => setIsMapModalVisible(false)}
-        footer={null}
+        footer={[
+          <Button key="close" onClick={() => setIsMapModalVisible(false)}>
+            Đóng
+          </Button>,
+          <Button
+            key="google"
+            type="primary"
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              (selectedCompany?.name || "") +
+                " " +
+                (selectedCompany?.headquarters || "")
+            )}`}
+            target="_blank"
+          >
+            Mở trên Google Maps
+          </Button>,
+        ]}
         width={800}
         centered
         styles={{ body: { padding: 0 } }}
