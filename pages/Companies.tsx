@@ -138,7 +138,7 @@ export default function InsuranceCompaniesPage() {
         <>
           <Row gutter={[24, 24]}>
             {paginatedData.map((item: InsuranceCompany) => (
-              <Col xs={24} sm={12} lg={8} key={item.id}>
+              <Col xs={24} sm={12} md={12} lg={8} key={item.id}>
                 <Card
                   style={{
                     height: "100%",
