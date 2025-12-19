@@ -95,6 +95,7 @@ const Home: React.FC = () => {
             Tra cứu thuật ngữ
           </Button>
           <Button
+            type="primary"
             size="large"
             shape="round"
             onClick={() => router.push("/cong-ty")}
