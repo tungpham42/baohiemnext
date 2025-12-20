@@ -4,7 +4,7 @@
 
 import React from "react";
 import { Typography, Card, Row, Col, Button, Space, Statistic } from "antd";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import {
   BookOutlined,
   MedicineBoxOutlined,
@@ -17,8 +17,6 @@ import {
 const { Title, Paragraph, Text } = Typography;
 
 const Home: React.FC = () => {
-  const router = useRouter();
-
   const features = [
     {
       key: "thuat-ngu",
@@ -86,22 +84,16 @@ const Home: React.FC = () => {
           lợi, mạng lưới y tế và quy trình giải quyết quyền lợi bảo hiểm.
         </Paragraph>
         <Space size="large" wrap>
-          <Button
-            type="primary"
-            size="large"
-            shape="round"
-            onClick={() => router.push("/thuat-ngu")}
-          >
-            Tra cứu thuật ngữ
-          </Button>
-          <Button
-            type="primary"
-            size="large"
-            shape="round"
-            onClick={() => router.push("/cong-ty")}
-          >
-            Tìm công ty bảo hiểm
-          </Button>
+          <Link href={"/thuat-ngu"}>
+            <Button type="primary" size="large" shape="round">
+              Tra cứu thuật ngữ
+            </Button>
+          </Link>
+          <Link href={"/cong-ty"}>
+            <Button type="primary" size="large" shape="round">
+              Tìm công ty bảo hiểm
+            </Button>
+          </Link>
         </Space>
       </div>
 
@@ -109,56 +101,58 @@ const Home: React.FC = () => {
       <Row gutter={[24, 24]}>
         {features.map((item) => (
           <Col xs={24} sm={12} xl={6} key={item.key}>
-            <Card
-              hoverable
-              style={{
-                height: "100%",
-                borderRadius: 12,
-                border: "1px solid #f0f0f0",
-              }}
-              styles={{
-                body: {
-                  padding: 32,
-                  display: "flex",
-                  flexDirection: "column",
-                  height: "100%",
-                },
-              }}
-              onClick={() => router.push(item.link)}
-            >
-              <div
+            <Link href={item.link}>
+              <Card
+                hoverable
                 style={{
-                  width: 64,
-                  height: 64,
-                  borderRadius: "50%",
-                  background: item.color,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: 24,
+                  height: "100%",
+                  borderRadius: 12,
+                  border: "1px solid #f0f0f0",
+                }}
+                styles={{
+                  body: {
+                    padding: 32,
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100%",
+                  },
                 }}
               >
-                {item.icon}
-              </div>
-              <Title level={3} style={{ marginBottom: 16, fontSize: 20 }}>
-                {item.title}
-              </Title>
-              <Paragraph style={{ color: "#666", flex: 1, fontSize: 15 }}>
-                {item.description}
-              </Paragraph>
-              <div style={{ marginTop: 16 }}>
-                <Text
-                  strong
+                <div
                   style={{
-                    color: "#0050b3",
+                    width: 64,
+                    height: 64,
+                    borderRadius: "50%",
+                    background: item.color,
                     display: "flex",
                     alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: 24,
                   }}
                 >
-                  Xem chi tiết <ArrowRightOutlined style={{ marginLeft: 8 }} />
-                </Text>
-              </div>
-            </Card>
+                  {item.icon}
+                </div>
+                <Title level={3} style={{ marginBottom: 16, fontSize: 20 }}>
+                  {item.title}
+                </Title>
+                <Paragraph style={{ color: "#666", flex: 1, fontSize: 15 }}>
+                  {item.description}
+                </Paragraph>
+                <div style={{ marginTop: 16 }}>
+                  <Text
+                    strong
+                    style={{
+                      color: "#0050b3",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    Xem chi tiết{" "}
+                    <ArrowRightOutlined style={{ marginLeft: 8 }} />
+                  </Text>
+                </div>
+              </Card>
+            </Link>
           </Col>
         ))}
       </Row>

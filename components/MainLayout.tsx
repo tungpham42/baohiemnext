@@ -3,7 +3,7 @@
 import React from "react";
 import { Layout, Menu, ConfigProvider, FloatButton } from "antd";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import {
   HomeOutlined,
   BookOutlined,
@@ -18,7 +18,6 @@ const { Header, Content, Footer } = Layout;
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
-  const router = useRouter();
 
   const menuItems = [
     {
@@ -71,29 +70,30 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
             zIndex: 100,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginRight: 40,
-              cursor: "pointer",
-            }}
-            onClick={() => router.push("/")}
-          >
-            <SafetyCertificateFilled
-              style={{ fontSize: 28, color: "#0050b3", marginRight: 8 }}
-            />
-            <span
+          <Link href={"/"}>
+            <div
               style={{
-                color: "#0050b3",
-                fontSize: 20,
-                fontWeight: 700,
-                letterSpacing: "-0.5px",
+                display: "flex",
+                alignItems: "center",
+                marginRight: 40,
+                cursor: "pointer",
               }}
             >
-              Cổng Bảo Hiểm
-            </span>
-          </div>
+              <SafetyCertificateFilled
+                style={{ fontSize: 28, color: "#0050b3", marginRight: 8 }}
+              />
+              <span
+                style={{
+                  color: "#0050b3",
+                  fontSize: 20,
+                  fontWeight: 700,
+                  letterSpacing: "-0.5px",
+                }}
+              >
+                Cổng Bảo Hiểm
+              </span>
+            </div>
+          </Link>
 
           <Menu
             mode="horizontal"
